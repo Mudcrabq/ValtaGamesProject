@@ -1,0 +1,864 @@
+body {
+    font-family: "Gilroy", normal;
+    margin: 0;
+}
+
+header {
+    margin-right: 150px;
+    margin-left: 150px; 
+    height: 102px;
+}
+
+h2{
+    font-size: 42px;
+    margin:0;
+}
+h3 {
+    font-size: 30px;
+    margin:0;
+}
+
+p{
+    margin:0;
+}
+
+.headerList {
+    display: grid; 
+    grid-template-columns: 133px 995px;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    column-gap: 56px;
+    
+}
+
+
+.space-betweenlogoandlist{
+    display: grid;
+    grid-template-columns: 176px 148px 203px 174px 63px 183px;
+    column-gap: 4px;
+}
+.boxes {
+    margin: auto;
+}
+
+.box-1 {
+}
+.box-2,.box-3,.box-4,.box-5,.box-6,.box-7 {
+    margin-top: auto;
+    height: 16px;
+    font-size: 14px;
+}
+
+.box-7 {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    column-gap: 15px;
+    border: 1px solid #E6E6E6;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.cart {
+    
+}
+
+main {
+     
+}
+section {
+}
+
+.background-image {
+    background: url(cringeground.svg) no-repeat top;
+    background-size: 100% auto;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 25px;
+    padding-top:63px;
+    margin-left: 100px;
+}
+
+.text-list-1 {
+    width: 679px;
+}
+
+.text-1 {
+    font-size: 68px;
+}
+.text-2{
+    font-size: 24px;
+}
+
+.images-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 578px;
+    row-gap: 42px;
+    column-gap: 28px;
+}
+
+.person-1,.person-2,.person-3,.person-4 {
+    width: 275px;
+    height: 333px;
+}
+
+.person-1{
+    
+    background: rgba(102, 188, 84, 0.2);
+    border-radius: 24px;
+}
+.person-2{
+    background: #F4EFF6;
+    border-radius: 24px;
+}
+.person-3{
+    background: #D6F0F3;
+    border-radius: 24px;
+    }
+.person-4{
+    background: #FFF0E3;
+    border-radius: 24px;
+        }
+
+
+
+.wrapper-2{
+    margin-top: 109px;
+}
+
+.title-utp{
+   text-align: center;
+   padding-right: 260px;
+}
+
+.utp {
+    display: flex;
+    justify-content: center;
+    column-gap: 28px;
+}
+
+.utp-1,.utp-2,.utp-3 {
+    margin-top: 41px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 376px;
+}
+
+
+.column1{
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
+
+
+
+.under-title {
+    width: 370px;
+    height: 68px;
+}
+
+
+
+.wrapper-3 {
+    margin-top: 113px;
+}
+
+.title-contest{
+    text-align: center;
+    padding-right: 900px;
+    height: 65px;
+}
+
+.functional {
+    display: flex;
+    justify-content: center;
+    padding-right: 520px;
+}
+
+.buttons-contest {
+    display: grid;
+    grid-template-columns: 138px 138px;
+    grid-column-gap: 14px;
+    height: 52px;
+    margin-top: 24px;
+}
+
+.button-active {
+    padding: 14px 16px; 
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #54C247;
+    border-radius: 12px;
+}
+
+.button-nonactive {
+    padding: 14px 16px; 
+    font-size: 18px;
+    color:  #666666;
+    background: #F1F1F1;
+    border-radius: 12px;
+}
+
+.stick {
+    margin-top: 38px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 39px;
+    column-gap: 24px;
+}
+
+.checkbox-1 {
+    width: 153px;
+}
+
+.checkbox-1 {
+    width: 136px;
+}
+
+.container-1 {
+    display: block;
+    position: relative;
+    padding-left: 27.75px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark-1 {
+    position: absolute;
+    width: 13.5px;
+    height: 13.5px;
+    top: 2.25px;
+    left: 2.25px;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-1:hover input ~ .checkmark-1 {
+    border-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-1 input:checked ~ .checkmark-1 {
+    background-color:  #66BC54;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark-1:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-1 input:checked ~ .checkmark-1:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-1 .checkmark-1:after {
+    position: relative;
+    width: 6.75px;
+    height: 4.5px;
+    top: 2px;
+    left: 2.5px;
+    border-radius: 1px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+
+
+  .container-2 {
+    display: block;
+    position: relative;
+    padding-left: 27.75px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark-2 {
+    position: absolute;
+    /*top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;*/
+    width: 13.5px;
+    height: 13.5px;
+    top: 2.25px;
+    left: 2.25px;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-2:hover input ~ .checkmark-2 {
+    border-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-2 input:checked ~ .checkmark-2 {
+    background-color:  #66BC54;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark-2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-2 input:checked ~ .checkmark-2:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-2 .checkmark-2:after {
+    position: relative;
+    width: 6.75px;
+    height: 4.5px;
+    top: 2px;
+    left: 2.5px;
+    border-radius: 1px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+.contest-placement {
+    display: grid; 
+    grid-template-rows: 304px 1fr 1fr 1fr;
+    justify-content: center;
+    margin-top: 78px;
+    row-gap: 24px;
+}
+
+                                                                      /*san-bernard*/
+
+.san-bernard {
+    display: flex;
+    width: 1184px;
+    height: 304px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+}
+
+.block-bernard {
+    margin-left: 24px;
+}
+
+.title-current-online{
+    display: flex;
+    column-gap: 8px;
+    font-size: 16px;
+    color: #D83835;
+    font-weight: 600;
+    margin-top: 24px;
+
+}
+
+.logo-bernard {
+    margin-top: 11px;
+}
+
+.period-bernard {
+    display: grid;
+    grid-template-columns: 336px 1px 338px;
+    column-gap: 14px;
+    margin-top: 14px;
+}
+
+.date-1-bernard {
+    font-size: 16px;
+}
+.date-2-bernard {
+    font-size: 16px;
+}
+.text-in-box {
+    margin-top: 24px;
+    width: 750px;
+    font-size: 18px;
+}
+
+.button-bernard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    width: 262px;
+    height: 52px;
+    background: #333333;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+.image-catanddog {
+    position: absolute;
+    top: -53px;
+    left: 725px;
+}
+
+                                                        /*Wellness Core*/
+.wellness-core {
+    display: flex;
+    width: 1184px;
+    height: 322px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+}
+
+.title-current-online{
+    display: flex;
+    column-gap: 8px;
+    font-size: 16px;
+    color: #D83835;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.logo-wellness {
+    margin-top: 12px;
+}
+
+.period-wellness {
+    display: grid;
+    grid-template-columns: 336px 1px 338px;
+    column-gap: 14px;
+    margin-top: 13px;
+}
+
+.date-1-wellness {
+    font-size: 16px;
+}
+.date-2-wellness {
+    font-size: 16px;
+}
+.text-in-box {
+    margin-top: 24px;
+    width: 750px;
+    height: 69px;
+    font-size: 18px;
+}
+
+.button-wellness {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 262px;
+    height: 52px;
+    background: #D15E14;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+.block-wellness {
+    margin-left: 24px;
+}
+
+.image-wellness {
+    position: absolute;
+    margin-bottom: 200px;
+    left: 725px;
+}
+
+
+                                                        /*Мнямс*/
+
+.mnams {
+    display: flex;
+    width: 1184px;
+    height: 322px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+}
+
+.title-current-online{
+    display: flex;
+    column-gap: 8px;
+    font-size: 16px;
+    color: #D83835;
+    font-weight: 600;
+    margin-top: 24px;
+
+}
+
+.logo-mnams {
+    margin-top: 12px;
+}
+
+.period-mnams {
+    display: grid;
+    grid-template-columns: 336px 1px 338px;
+    column-gap: 14px;
+    margin-top: 12px;
+}
+
+.date-1-mnams {
+    font-size: 16px;
+}
+.date-2-mnams {
+    font-size: 16px;
+}
+.text-in-box {
+    margin-top: 15px;
+    width: 750px;
+    height: 69px;
+    font-size: 18px;
+}
+
+.button-mnams {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 262px;
+    height: 52px;
+    background: #E59937;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+.block-mnams {
+    margin-left: 24px;
+}
+
+.image-mnams {
+    position: absolute;
+    margin-bottom: 200px;
+    left: 835px;
+}                                                        
+
+                                                        /*Monge*/
+
+.monge {
+    display: flex;
+    width: 1184px;
+    height: 322px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+}
+
+.title-current-online{
+    display: flex;
+    column-gap: 8px;
+    font-size: 16px;
+    color: #D83835;
+    font-weight: 600;
+    margin-top: 24px;
+
+}
+
+.logo-monge {
+    margin-top: 12px;
+}
+
+.period-monge {
+    display: grid;
+    grid-template-columns: 336px 1px 338px;
+    column-gap: 14px;
+    margin-top: 22px;
+}
+
+.date-1-monge {
+    font-size: 16px;
+}
+.date-2-monge {
+    font-size: 16px;
+}
+.text-in-box-monge {
+    margin-top: 15px;
+    width: 750px;
+    height: 69px;
+    font-size: 18px;
+}
+
+.button-monge {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 262px;
+    height: 52px;
+    background: #013F7C;;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+.block-monge {
+    margin-left: 24px;
+}
+
+.image-monge {
+    position: absolute;
+    margin-bottom: 200px;
+    left: 800px;
+    width: 302px;
+    height: 362px;
+}
+                                                            /*Правила для участия в конкурсе*/
+.rules{
+    display: grid; 
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin-top: 50px;
+}
+.title-rules{
+ 
+ font-size: 42px;
+ width: 1050px;
+ height: 108px;
+}
+.rules-and-img{
+    display: grid;
+    position: relative;
+    grid-template-columns: 578px 578px;
+    column-gap: 28px;
+    height: 635px;
+}
+.text-of-rules{
+    width: 578px;
+
+}
+.rule-1{
+    width: 578px;
+    height: 152px;
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.actual-rules{
+    display: grid;
+    grid-template-rows: 38px 76px 76px 38px;
+    margin-top: 32px;
+    font-size: 24px;
+    height: 321px;
+    width: 554px;
+    line-height: 1.5;
+}
+ul{
+    margin:0;
+}
+li {
+    color: #66BC54;
+    margin:0;
+    margin-top:14px;
+}
+
+li span {
+   
+    color: #333333;
+    margin: 0;
+}
+
+.rules-img{
+    position: absolute;
+    height: 578px;
+    width: 601px;
+    left: 606px;
+    top: 32px;
+}
+
+                                                                    /*news*/
+.block-news{
+    display: grid; 
+    justify-content: center;
+
+}
+.news{
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 1184px;
+    height: 736px;
+    margin-top: 144px;
+}
+.news-title{
+    font-size: 42px;
+    width: 578px;
+    height: 40px;
+    
+}
+.columns-news-1{
+    display: grid;
+    grid-template-columns: 578px 578px;
+    column-gap: 28px;
+    margin-top: 42px;
+}
+
+.columns-news-2{
+    display: grid;
+    grid-template-columns: 578px 578px;
+    column-gap: 28px;
+    margin-top: 42px;
+}
+
+.news-img{
+    width: 578px;
+    height: 315px;
+}
+.news-1{
+
+}
+.date-posted{
+    font-size: 18px;
+    color: #666666;
+}
+
+.title-of-news{
+    margin-top: 8px;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 500;
+}
+.text-of-news{
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+}
+.button-news{
+    padding: 19px 59.5px;
+    margin-top: 51px;
+    width: 156px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+}
+
+
+
+
+footer {
+    margin-top: 114px;
+}
+
+.block-footer{
+    display: grid;
+    grid-template-columns: 414px 193px 333px;
+    align-items: center;
+    margin: 0 auto;
+    width: 1184px;
+    height: 90px;
+    margin-bottom: 33px;
+    margin-top: 35px;
+}
+
+.button-footer {
+    display: flex;
+    width: 333px;
+    height: 62px;
+    left: 27.69%;
+    right: 27.86%;
+    top: 34.31%;
+    bottom: 31.82%;
+    align-items: center;
+    justify-content: center;
+    background: #66BC54;
+    border-radius: 12px;
+    color: #FFFFFF;
+    margin-left: 245px;
+}
+
+.footer-logo {
+    margin-left: 81px;
+    width: 193px;
+    height: 90px;
+}
+
+
+.namevalta{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.left-footer{
+    width: 414px;
+    height: 54px;
+}
+
+a{margin:0}
+.links{
+    display:grid;
+    grid-template-columns: 77px 117px 136px;
+    margin-top: 14px;
+    column-gap: 32px;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 16px;
+    width: 414px;
+}
+
+
