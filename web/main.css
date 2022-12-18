@@ -861,4 +861,11 @@ a{margin:0}
     width: 414px;
 }
 
+/* СТИЛИ ДЛЯ ФИЬЛТРА Checkbox */
+.hideItem {
+    display: none;
+}
+.showItem {
+    
+}
 
