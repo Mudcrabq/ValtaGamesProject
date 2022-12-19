@@ -74,15 +74,15 @@ section {
     background-size: 100% auto;
 }
 
-
+                                                    /* Main List */
 .wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 679px 578px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    flex-direction: row;
-    gap: 25px;
-    padding-top:63px;
+    column-gap: 28px;
+    margin-top:63px;
     margin-left: 100px;
 }
 
@@ -95,6 +95,38 @@ section {
 }
 .text-2{
     font-size: 24px;
+    line-height: 1.5;
+}
+
+.buttons-of-face{
+    display: grid;
+    grid-template-columns: 303px 247px;
+    column-gap: 24px;
+    margin-top: 64px;
+    width: 574px;
+}
+
+.button-of-face-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 72px;
+    background: #66BC54;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.button-of-face-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    height: 72px;
+    border: 1px solid #E6E6E6;
+    border-radius: 16px;
 }
 
 .images-list {
@@ -126,9 +158,9 @@ section {
 .person-4{
     background: #FFF0E3;
     border-radius: 24px;
-        }
+}
 
-
+                                                        /* UTP */
 
 .wrapper-2{
     margin-top: 109px;
@@ -378,10 +410,10 @@ section {
 
 .contest-placement {
     display: grid; 
-    grid-template-rows: 304px 1fr 1fr 1fr;
+    grid-template-rows: 304px 322 322 322;
+    row-gap: 24px;
     justify-content: center;
     margin-top: 78px;
-    row-gap: 24px;
 }
 
                                                                       /*san-bernard*/
@@ -612,8 +644,7 @@ section {
     font-size: 16px;
     color: #D83835;
     font-weight: 600;
-    margin-top: 24px;
-
+    margin-top:24px;
 }
 
 .logo-monge {
