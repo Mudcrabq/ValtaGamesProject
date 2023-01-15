@@ -29,7 +29,9 @@ h3 {
 p{
     margin:0;
 }
-
+.border-burger{
+    display: none;
+}
 .burger {
     display: none;
 }
@@ -39,20 +41,20 @@ p{
 }
 
 .header-logo img{
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
 
 .header-body {
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 102px;
 }
 
 .header-menu {
     display: flex;
+    max-width: 100%;
 }
 
 .container{
@@ -92,33 +94,48 @@ p{
     margin-left: 28px;
 }
 
+.burger-logo {
+    display: none;
+}
+
 @media (max-width: 767px) {
+    body.lock {
+        overflow: hidden;
+    }
     .boxes {
-        font-size: 15px;
+       
     }
     .header-body{
-        display: flex;
-        
         
     }
+    
     .header-logo{
-        z-index: 5;
+        display: block;
     }
     .header-list{
-        flex-direction: column;
+        display: block;
+        position: absolute;
+        margin-right: 16px;
+        margin-left: 16px;
+
     }
+
+    /*                 BURGER START                */
     .border-burger{
+        display: block;
         border: 1px solid #E6E6E6;
+        
         border-radius: 12px;
-        padding: 14px;
         z-index: 4;
+        width: 42px;
+        height: 42px;
+
     }
     .burger {
         display:block;
         position: relative;
-        width: 30px;
+        width: 20px;
         height: 20px;
-        
     }
 
     .burger span{
@@ -126,9 +143,10 @@ p{
         background-color: #333333 ;
         width: 75%;
         height: 2px;
-        left: 0;
-        top: 9px;
-        border-radius: 14px;
+        left: 10px;
+        top: 20px;
+        border-radius: 15px;
+        transition: all 0.3s ease 0s;
     }
 
     .burger:before,
@@ -138,27 +156,107 @@ p{
         position: absolute;
         width: 100%;
         height: 2px;
-        left: 0;
+        border-radius: 15px;
+        margin-top: 15px;
+        left: 10px;
+        transition: all 0.3s ease 0s;
     }
+
+    
     .burger:before{
         top: 0;
-        border-radius: 14px;
+        border-radius: 15px;
+        
     }
     .burger:after{
-        bottom: 0;
+        
+        top: 10px;
         width: 50%;
-        border-radius: 14px;
+        border-radius: 15px;
     }
+
+    .burger.active{
+        
+    }
+
+    .burger.active span {
+        display:none;
+        width: 100%;
+    }
+
+    .burger.active:before{
+        transform: rotate(-45deg);
+        top:6px;
+        border-radius: 20px;
+    } 
+    .burger.active:after{
+        transform: rotate(45deg);
+        width: 100%;
+        top: 6px;
+        border-radius: 20px;
+    } 
+
+    /*              BURGER END              */
+    
+    
     .header-menu{
         position: fixed;
-        top: 0;
+        overflow: auto;
+        top: -1000%;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: #FFFFFF;
-        overflow: auto;
+        padding: 70px 0px 0px 0px;
+        line-height: 21px; 
+        transition: all 0.2s ease 0s;
+    }
+
+    .header-menu.active{
+        top:0;
+    }
+
+    .header-list li {
+        display: flex;
+        font-size: 1.125rem;
+        flex-direction: column;
+    }
+    .header-list span{
+        width: 100%;
+        border: 1px solid #E7EBF3;
+    }
+    .burger-logo{
+        display: block;
+        position: relative;
+        z-index: 5;
+        max-width: 100%;
+        left: 35%;
+        top: 70%;
     }
 }
+
+@media (max-width: 858px) {
+    .box-7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 42px;
+        max-height: 42px;
+        column-gap: 0;
+        border: 1px solid #E6E6E6;
+        border-radius: 12px;
+        padding: 12px;
+    }
+    .box-7 span{
+        display: none;
+    }
+    .box-7 img{
+        width: 18px;
+        height: 18px;
+    }
+    
+}
+
 
 
 main {
@@ -224,6 +322,7 @@ main {
     font-size: 20px;
     height: 72px;
     border: 1px solid #E6E6E6;
+    background-color: #FFFFFF;
     border-radius: 16px;
     font-weight: 600;
 }
